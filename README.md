@@ -1,10 +1,13 @@
-# KnowWhereGraph Visualization
+# GeoGraphVis
 
-A project for visualizing datasets from the Knowledge Graph.
+A geovisualization tool empowered by knowledge graph technology which enables intelligent decision making and problem solving, and further supports disaster response and humanitarian aid. There are three innovative features of this solution:
+- A location-aware knowledge graph is created to link and integrate cross-domain data to make the graph analytics-ready. 
+- Expert-driven disaster response workflows are analyzed and modeled as machine-understandable decision paths to guide knowledge exploration via the graph. 
+- A scene-based visualization strategy is developed to enable interactive and heuristic visual analytics to better comprehend disaster impact situations and develop action plans for humanitarian aid.
 
-## Available Scripts
+## Runing and Deploying
 
-In the project directory, you can run:
+In the project directory, you can run scripts:
 
 ### `npm install`
 
@@ -32,3 +35,26 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## License
+
+GeoGraphVis is released under the [Apache 2.0 license](LICENSE).
+
+## Citing GeoGraphVis
+
+If you wish to refer to the methods or results in your research, please cite the following paper:  
+
+```BibTeX
+@Article{ijgi12030112,
+  AUTHOR = {Li, Wenwen and Wang, Sizhe and Chen, Xiao and Tian, Yuanyuan and Gu, Zhining and Lopez-Carr, Anna and Schroeder, Andrew and Currier, Kitty and Schildhauer, Mark and Zhu, Rui},
+  TITLE = {GeoGraphVis: A Knowledge Graph and Geovisualization Empowered Cyberinfrastructure to Support Disaster Response and Humanitarian Aid},
+  JOURNAL = {ISPRS International Journal of Geo-Information},
+  VOLUME = {12},
+  YEAR = {2023},
+  NUMBER = {3},
+  ARTICLE-NUMBER = {112},
+  URL = {https://www.mdpi.com/2220-9964/12/3/112},
+  ISSN = {2220-9964},
+  DOI = {10.3390/ijgi12030112}
+}
+```
