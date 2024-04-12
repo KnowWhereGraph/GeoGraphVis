@@ -34,7 +34,7 @@ import Constant from "./constant";
 import Utils from "./utils";
 
 // const host0= 'http://cici2.lab.asu.edu:8000/repositories/storm_track_2021?query=';
-const host1= 'https://staging.knowwheregraph.org/graphdb/repositories/KWG?query=';
+// const host1= 'https://staging.knowwheregraph.org/graphdb/repositories/KWG?query=';
 const host2= 'https://stko-kwg.geog.ucsb.edu/graphdb/repositories/KWG?query=';
 // const host2= 'https://staging.knowwheregraph.org/graphdb/repositories/KWG?query=';
 // const host3= 'https://stko-kwg.geog.ucsb.edu/graphdb/repositories/DRDemo?query=';
@@ -177,7 +177,7 @@ SELECT distinct ?expert ?name ?fullname ?affil ?state ?wkt ?url ?topics WHERE {
 
 class SparqlQuery {
     static stormList(onResult) {
-        fetch(host1 + encodeURIComponent(qStormList), {
+        fetch(host2 + encodeURIComponent(qStormList), {
             headers: {'Accept': 'application/json'}
         })
         .then($ => $.json())
@@ -191,7 +191,7 @@ class SparqlQuery {
     }
 
     static stormTrack(name, onResult) {
-        fetch(host1 + encodeURIComponent(Utils.buildStringFromTempl(qStormTrack, name)), {
+        fetch(host2 + encodeURIComponent(Utils.buildStringFromTempl(qStormTrack, name)), {
             headers: {'Accept': 'application/json'}
         })
         .then($ => $.json())
